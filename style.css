@@ -1,0 +1,123 @@
+body {
+    
+    background: url(background.jpg) 50% 0 fixed ;
+    background-repeat: no-repeat;
+
+}
+h1{font-size: 40px;
+color:white;
+ box-shadow: 0 10px 100px rgba(0,0,0,0.8);}
+#header{width:100%; background-color: black;
+opacity: 0.8;}
+
+#wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+ box-shadow: 0 10px 100px rgba(0,0,0,0.8);}
+
+h3{
+    font-family: monospace;
+    font-size: 160%;
+}
+section {
+    width:300px;
+    float: left;
+    margin: 0.5em;
+    height:300px;
+
+   
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.pagination{position: absolute;}
+
+.info {
+    margin-top: -309px;
+    padding-top: 300px;
+    position: relative;
+    text-decoration: none;
+     box-shadow: 100px 100px 100px rgba(0,0,0,0.8);
+
+  /* position: relative;
+    transition: padding-top .5s;
+*/
+
+}
+img{height:300px;
+    height:300px;
+     box-shadow: 0 10px 100px rgba(0,0,0,0.8);
+}
+
+
+
+
+@-webkit-keyframes beweegOmhoog {
+    0% { padding-top: 300px }
+    37.5% { padding-top: 150px }
+    62.5% { padding-top: 75px }
+    87.5% { padding-top: 30px }
+    25%, 50%, 75%, 100% {padding-top: 0px }
+}
+
+@keyframes beweegOmhoog {
+    0% { padding-top: 300px }
+    37.5% { padding-top: 150px }
+    62.5% { padding-top: 75px }
+    87.5% { padding-top: 30px }
+    25%, 50%, 75%, 100% {padding-top: 0px }
+}
+
+
+
+@-webkit-keyframes beweegOmlaag{
+   0% { padding-top: 0px }
+    37.5% { padding-top: 150px }
+    62.5% { padding-top: 225px }
+    87.5% { padding-top: 270px }
+    25%, 50%, 75%, 100% {padding-top: 300px }
+}
+
+@keyframes beweegOmlaag {
+   0% { padding-top: 0px }
+    37.5% { padding-top: 150px }
+    62.5% { padding-top: 225px }
+    87.5% { padding-top: 270px }
+    25%, 50%, 75%, 100% {padding-top: 300px }
+}
+
+.info {
+    text-align: center;
+    -webkit-animation: beweegOmlaag 1s forwards;
+    animation: beweegOmlaag 1s forwards;
+
+}
+
+
+
+.info:hover {
+
+    
+    -webkit-animation: beweegOmhoog 1s forwards;
+    animation: beweegOmhoog 1s forwards;
+}
+
+.info article {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    height: 300px;
+   
+   
+}
+
+li{text-decoration: none;
+list-style-type: none;+wqs}
+
+h1{text-align: center;}
+
+.info article h3 {
+    margin-top: 0;
+    text-align: center;
+}
